@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoTab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="add-form">
+        <input type="text" id="domain-input" placeholder="Enter domain..." />
+        <button type="submit">Add</button>
+      </form>
+
+      <div class="list-container">
+        <ul id="domain-list">
+          <!-- <li>
+            <span class="domain-name" title="ads.badsite.com"
+              >ads.badsite.com</span
+            >
+            <button class="delete-btn">🗑</button>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider"></span>
+            </label>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
