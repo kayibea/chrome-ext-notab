@@ -13,12 +13,12 @@ function handleSubmit(e: SubmitEvent) {
 
   const hostname = input.value.trim();
   if (!isValidDomain(hostname)) {
-    alert("Invalid domain format.");
+    window.alert("Invalid domain format.");
     return;
   }
 
   if (domains.some((d) => d.hostname === hostname)) {
-    alert("Domain already exists.");
+    window.alert("Domain already exists.");
     return;
   }
 
@@ -67,7 +67,7 @@ function handleDeleteClick(e: Event) {
   const li = target.closest("li");
   const hostname = li?.querySelector(".domain-name")?.textContent?.trim();
 
-  if (!hostname || !confirm(`Delete < ${hostname} > ?`)) return;
+  if (!hostname || !window.confirm(`Delete < ${hostname} > ?`)) return;
 
   li?.remove();
   domains = domains.filter((d) => d.hostname !== hostname);
