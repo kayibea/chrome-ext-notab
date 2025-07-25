@@ -2,7 +2,6 @@
   "name": "chrome-ext-notab",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "nodemon",
     "build": "tsc && npm run copy",
